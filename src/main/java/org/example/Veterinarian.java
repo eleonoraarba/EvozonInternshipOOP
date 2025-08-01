@@ -28,4 +28,20 @@ public class Veterinarian {
 
     public Veterinarian() {
     }
+
+    public void vaccinateAnimal(Animal animal){
+        int healthStatusAfterVaccin = animal.getHealthStatus() + 1;
+        int moodLevelAfterVaccin = animal.getMoodLevel() -1;
+        animal.setMoodLevel(moodLevelAfterVaccin);
+        animal.setHealthStatus(healthStatusAfterVaccin);
+        System.out.println("Vaccin done");
+    }
+
+    public void disinfestationAnimal(Animal animal){
+        int healthStatusAfterDisinfestation = animal.getHealthStatus() + 1;
+        int moodLevelAfterdisinfestation = animal.getMoodLevel() -1;
+        animal.setMoodLevel(moodLevelAfterdisinfestation);
+        animal.setHealthStatus(healthStatusAfterDisinfestation);
+        System.out.println("Disinfestation done");
+    }
 }

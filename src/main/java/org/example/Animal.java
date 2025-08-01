@@ -13,8 +13,9 @@ public abstract class Animal {
     private boolean isAdopted;
 
     private boolean isHungry;
+    private String breed;
 
-    public Animal(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName, int weight, String color, boolean isAdopted, boolean isHungry) {
+    public Animal(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName, int weight, String color, boolean isAdopted, boolean isHungry, String breed) {
         this.name = name;
         this.age = age;
         this.healthStatus = healthStatus;
@@ -25,6 +26,15 @@ public abstract class Animal {
         this.color = color;
         this.isAdopted = isAdopted;
         this.isHungry = isHungry;
+        this.breed = breed;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
     public String getName() {
@@ -126,4 +136,12 @@ public abstract class Animal {
     }
 
     public abstract void feedCorrectly(AnimalFood animalFood);
+
+    public void sleep(){
+        System.out.println("Zzz");
+    }
+
+    public void wakeUp(){
+        System.out.println("Morning!");
+    }
 }

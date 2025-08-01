@@ -51,7 +51,6 @@ public abstract class AnimalFood {
     public AnimalFood() {
     }
 
-    public abstract void isBeingEatten();
     public boolean isExpired(){
         LocalDateTime todayDate = LocalDateTime. now();
 

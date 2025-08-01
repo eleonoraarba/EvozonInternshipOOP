@@ -2,8 +2,8 @@ package org.example;
 
 public class Duck extends Animal{
 
-    public Duck(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName, int weight, String color, boolean isAdopted, boolean isHungry) {
-        super(name, age, healthStatus, moodLevel, favoriteFoodName, favoriteRecreationalActivityName, weight, color, isAdopted, isHungry);
+    public Duck(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName, int weight, String color, boolean isAdopted, boolean isHungry, String breed) {
+        super(name, age, healthStatus, moodLevel, favoriteFoodName, favoriteRecreationalActivityName, weight, color, isAdopted, isHungry, breed);
     }
 
     public Duck() {

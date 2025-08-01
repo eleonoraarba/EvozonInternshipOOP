@@ -27,4 +27,10 @@ public class VeteranianAssistent {
 
     public VeteranianAssistent() {
     }
+
+    public void petAnimal(Animal animal){
+        int moodLevelAfterPetting = animal.getMoodLevel() + 1;
+        animal.setMoodLevel(moodLevelAfterPetting);
+        System.out.println("Animal petted!!");
+    }
 }

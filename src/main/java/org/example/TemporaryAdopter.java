@@ -7,14 +7,14 @@ public class TemporaryAdopter extends Adopter{
     private Date adoptionStartDate;
     private Date adoptionEndDate;
 
-    public TemporaryAdopter(String name, int availableMoney, Date adoptionStartDate, Date adoptionEndDate) {
-        super(name, availableMoney);
-        this.adoptionStartDate = adoptionStartDate;
-        this.adoptionEndDate = adoptionEndDate;
+    public TemporaryAdopter(String name, int availableMoney, int age, String hairColor, String height) {
+        super(name, availableMoney, age, hairColor, height);
     }
 
-    public TemporaryAdopter() {
-
+    public TemporaryAdopter(String name, int availableMoney, int age, String hairColor, String height, Date adoptionStartDate, Date adoptionEndDate) {
+        super(name, availableMoney, age, hairColor, height);
+        this.adoptionStartDate = adoptionStartDate;
+        this.adoptionEndDate = adoptionEndDate;
     }
 
     public Date getAdoptionStartDate() {
