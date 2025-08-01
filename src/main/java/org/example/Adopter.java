@@ -1,6 +1,6 @@
 package org.example;
 
-public class Adopter {
+public abstract class Adopter {
 
     public String name;
     public int availableMoney;
@@ -29,7 +29,5 @@ public class Adopter {
     public Adopter() {
     }
 
-    public void isForeverAdopter(){
-        System.out.println("Not sure");
-    }
+    public abstract void isForeverAdopter();
 }

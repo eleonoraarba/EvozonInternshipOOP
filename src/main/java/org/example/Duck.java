@@ -9,7 +9,13 @@ public class Duck extends Animal{
     public Duck() {
     }
 
-    public void eat(){
+    @Override
+    public void eat() {
         System.out.println("Duck eats");
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("mac-mac");
     }
 }

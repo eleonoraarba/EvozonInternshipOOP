@@ -9,8 +9,14 @@ public class Cat extends Animal{
     public Cat() {
     }
 
-    public void eat(){
+    @Override
+    public void eat() {
         System.out.println("Cat eats");
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("miu-miu");
     }
 
     @Override

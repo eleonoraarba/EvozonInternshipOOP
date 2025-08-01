@@ -1,6 +1,6 @@
 package org.example;
 
-public class Animal {
+public abstract class Animal {
 
     public String name;
     public int age;
@@ -71,7 +71,6 @@ public class Animal {
     public Animal() {
     }
 
-    public void eat() {
-        System.out.println("Animal eats");
-    }
+    public abstract void eat();
+    public abstract void speak();
 }

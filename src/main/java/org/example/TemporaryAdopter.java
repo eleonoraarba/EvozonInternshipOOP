@@ -43,6 +43,7 @@ public class TemporaryAdopter extends Adopter{
                 '}';
     }
 
+    @Override
     public void isForeverAdopter(){
         System.out.println("This is not a forever home:(");
     }

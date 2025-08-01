@@ -8,6 +8,7 @@ public class PermanentAdopter extends Adopter{
     public PermanentAdopter() {
     }
 
+    @Override
     public void isForeverAdopter(){
         System.out.println("This is a forever home");
     }

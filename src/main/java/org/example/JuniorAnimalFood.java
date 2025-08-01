@@ -11,6 +11,7 @@ public class JuniorAnimalFood extends AnimalFood{
     public JuniorAnimalFood() {
     }
 
+    @Override
     public void isBeingEatten(){
         System.out.println("Niom niom baby");
     }

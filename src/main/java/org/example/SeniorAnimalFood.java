@@ -24,6 +24,7 @@ public class SeniorAnimalFood extends AnimalFood{
         isForJointSupport = forJointSupport;
     }
 
+    @Override
     public void isBeingEatten(){
         System.out.println("Niooom nioom old");
     }

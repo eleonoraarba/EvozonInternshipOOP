@@ -1,8 +1,9 @@
 package org.example;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
-public class AnimalFood {
+public abstract class AnimalFood {
     public String name;
     public int price;
     public Date expirationDate;
@@ -50,7 +51,11 @@ public class AnimalFood {
     public AnimalFood() {
     }
 
-    public void isBeingEatten(){
-        System.out.println("Niom niom");
+    public abstract void isBeingEatten();
+    public boolean isExpired(){
+        LocalDateTime todayDate = LocalDateTime. now();
+
+        return this.expirationDate.equals(todayDate);
+
     }
 }
