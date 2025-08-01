@@ -8,6 +8,8 @@ public class Animal {
     public int moodLevel;
     public String favoriteFoodName;
     public String favoriteRecreationalActivityName;
+    private  int weight;
+    private String color;
 
     public String getName() {
         return name;
@@ -68,4 +70,5 @@ public class Animal {
 
     public Animal() {
     }
+
 }

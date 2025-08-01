@@ -24,7 +24,7 @@ public class App {
         animal1.setMoodLevel(5);
         animal1.setHealthStatus(3);
         animal1.setFavoriteFoodName("PisiFood");
-        animal1.setFavoriteRecreationalActivityName("Somn");
+        animal1.setFavoriteRecreationalActivityName("SomnPufos");
 
         AnimalFood animalFood1 = new AnimalFood();
         animalFood1.setName("Wiskas");
@@ -43,5 +43,29 @@ public class App {
         game1.setAdopter(adopter1);
         game1.setAnimal(animal1);
         game1.setVeterinarian(veterinarian1);
+
+        Cat cat1 = new Cat("MiuMiu", 12, 3, 7, "PisiFood", "Plimbare");
+        System.out.println(cat1);
+
+        Dog dog1 = new Dog("Azorel", 13, 2, 7,"Treats", "Play");
+        dog1.setName("Azor");
+
+        TemporaryAdopter temporaryAdopter = new TemporaryAdopter();
+        temporaryAdopter.setName("Mimi");
+        temporaryAdopter.setAvailableMoney(200);
+        temporaryAdopter.setAdoptionStartDate( new Date(2025,8,11));
+        temporaryAdopter.setAdoptionEndDate( new Date(2025,12,1));
+        System.out.println(temporaryAdopter);
+
+        PermanentAdopter permanentAdopter = new PermanentAdopter();
+        permanentAdopter.setName("Lili");
+        permanentAdopter.setAvailableMoney(1000);
+
+        SeniorAnimalFood seniorAnimalFood = new SeniorAnimalFood();
+        seniorAnimalFood.setForJointSupport(true);
+        seniorAnimalFood.setName("Jointi");
+        seniorAnimalFood.setPrice(150);
+        seniorAnimalFood.setStock(70);
+        seniorAnimalFood.setExpirationDate(new Date(2030,11,2));
     }
 }
