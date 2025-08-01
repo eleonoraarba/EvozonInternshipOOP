@@ -49,4 +49,8 @@ public class AnimalFood {
 
     public AnimalFood() {
     }
+
+    public void isBeingEatten(){
+        System.out.println("Niom niom");
+    }
 }

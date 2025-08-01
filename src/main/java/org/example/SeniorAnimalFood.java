@@ -23,4 +23,8 @@ public class SeniorAnimalFood extends AnimalFood{
     public void setForJointSupport(boolean forJointSupport) {
         isForJointSupport = forJointSupport;
     }
+
+    public void isBeingEatten(){
+        System.out.println("Niooom nioom old");
+    }
 }

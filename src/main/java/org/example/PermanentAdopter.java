@@ -7,4 +7,8 @@ public class PermanentAdopter extends Adopter{
 
     public PermanentAdopter() {
     }
+
+    public void isForeverAdopter(){
+        System.out.println("This is a forever home");
+    }
 }

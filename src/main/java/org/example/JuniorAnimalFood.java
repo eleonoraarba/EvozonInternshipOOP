@@ -10,4 +10,8 @@ public class JuniorAnimalFood extends AnimalFood{
 
     public JuniorAnimalFood() {
     }
+
+    public void isBeingEatten(){
+        System.out.println("Niom niom baby");
+    }
 }

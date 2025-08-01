@@ -28,4 +28,8 @@ public class Adopter {
 
     public Adopter() {
     }
+
+    public void isForeverAdopter(){
+        System.out.println("Not sure");
+    }
 }

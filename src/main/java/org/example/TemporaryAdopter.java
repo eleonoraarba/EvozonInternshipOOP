@@ -42,4 +42,8 @@ public class TemporaryAdopter extends Adopter{
                 ", availableMoney=" + availableMoney +
                 '}';
     }
+
+    public void isForeverAdopter(){
+        System.out.println("This is not a forever home:(");
+    }
 }

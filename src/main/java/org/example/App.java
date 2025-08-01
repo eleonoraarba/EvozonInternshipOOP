@@ -67,5 +67,11 @@ public class App {
         seniorAnimalFood.setPrice(150);
         seniorAnimalFood.setStock(70);
         seniorAnimalFood.setExpirationDate(new Date(2030,11,2));
+
+        cat1.eat();
+        dog1.eat();
+        permanentAdopter.isForeverAdopter();
+        adopter1.isForeverAdopter();
+
     }
 }
