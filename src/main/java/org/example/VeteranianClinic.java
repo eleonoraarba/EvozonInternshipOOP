@@ -24,4 +24,7 @@ public class VeteranianClinic {
         this.name = name;
         this.address = address;
     }
+
+    public VeteranianClinic() {
+    }
 }

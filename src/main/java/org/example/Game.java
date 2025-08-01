@@ -35,4 +35,7 @@ public class Game {
         this.animal = animal;
         this.veterinarian = veterinarian;
     }
+
+    public Game() {
+    }
 }

@@ -46,4 +46,7 @@ public class AnimalFood {
         this.expirationDate = expirationDate;
         this.stock = stock;
     }
+
+    public AnimalFood() {
+    }
 }

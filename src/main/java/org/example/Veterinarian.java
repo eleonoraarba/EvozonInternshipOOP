@@ -25,4 +25,7 @@ public class Veterinarian {
         this.name = name;
         this.specialization = specialization;
     }
+
+    public Veterinarian() {
+    }
 }

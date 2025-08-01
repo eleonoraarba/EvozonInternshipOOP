@@ -65,4 +65,7 @@ public class Animal {
         this.favoriteFoodName = favoriteFoodName;
         this.favoriteRecreationalActivityName = favoriteRecreationalActivityName;
     }
+
+    public Animal() {
+    }
 }

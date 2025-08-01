@@ -24,4 +24,7 @@ public class Playground {
         this.name = name;
         this.address = address;
     }
+
+    public Playground() {
+    }
 }

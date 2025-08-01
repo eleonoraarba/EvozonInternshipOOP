@@ -34,4 +34,7 @@ public class AnimalMedicament {
         this.price = price;
         this.stock = stock;
     }
+
+    public AnimalMedicament() {
+    }
 }

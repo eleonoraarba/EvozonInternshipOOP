@@ -24,4 +24,7 @@ public class VeteranianAssistent {
         this.name = name;
         this.veteranianSupervisor = veteranianSupervisor;
     }
+
+    public VeteranianAssistent() {
+    }
 }
