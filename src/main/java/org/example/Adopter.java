@@ -30,4 +30,13 @@ public abstract class Adopter {
     }
 
     public abstract void isForeverAdopter();
+
+    public void adopt(Animal animal){
+        if(!animal.isAdopted()){
+            animal.setAdopted(true);
+        }
+        else{
+            System.out.println("The animal is already adopted!");
+        }
+    }
 }

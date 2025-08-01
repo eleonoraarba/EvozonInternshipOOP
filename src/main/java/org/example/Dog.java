@@ -2,9 +2,10 @@ package org.example;
 
 public class Dog extends Animal{
 
-    public Dog(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName) {
-        super(name, age, healthStatus, moodLevel, favoriteFoodName, favoriteRecreationalActivityName);
+    public Dog(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName, int weight, String color, boolean isAdopted, boolean isHungry) {
+        super(name, age, healthStatus, moodLevel, favoriteFoodName, favoriteRecreationalActivityName, weight, color, isAdopted, isHungry);
     }
+
     public Dog() {
     }
 
@@ -16,6 +17,21 @@ public class Dog extends Animal{
     @Override
     public void speak() {
         System.out.println("ham-ham");
+    }
+
+    @Override
+    public void feedCorrectly(AnimalFood animalFood) {
+        if(this.age <= 7 && animalFood instanceof JuniorAnimalFood){
+            this.setHungry(false);
+            System.out.println("Dog ate good.");
+        }
+        else if(this.age > 7 && animalFood instanceof  SeniorAnimalFood){
+            this.setHungry(false);
+            System.out.println("Dog ate good.");
+        }
+        else{
+            System.out.println("Food is not ok for this dog.");
+        }
     }
 
 }

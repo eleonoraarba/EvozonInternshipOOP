@@ -33,7 +33,7 @@ public class App {
 //        animalFood1.setExpirationDate(new Date(2027, 7, 11));
 
         RecreationalActivity recreationalActivity1 = new RecreationalActivity();
-        recreationalActivity1.setName("Somn");
+        recreationalActivity1.setName("Plimbare");
 
         Veterinarian veterinarian1 = new Veterinarian();
         veterinarian1.setName("Dr Mara");
@@ -44,10 +44,10 @@ public class App {
 //        game1.setAnimal(animal1);
 //        game1.setVeterinarian(veterinarian1);
 
-        Cat cat1 = new Cat("MiuMiu", 12, 3, 7, "PisiFood", "Plimbare");
+        Cat cat1 = new Cat("MiuMiu", 12, 3, 7, "PisiFood", "Plimbare", 10, "Black", false, false);
         System.out.println(cat1);
 
-        Dog dog1 = new Dog("Azorel", 13, 2, 7,"Treats", "Play");
+        Dog dog1 = new Dog("Azorel", 13, 2, 7,"Treats", "Play", 11, "Brown",false, false);
         dog1.setName("Azor");
 
         TemporaryAdopter temporaryAdopter = new TemporaryAdopter();
@@ -76,5 +76,9 @@ public class App {
 
         System.out.println(seniorAnimalFood.isExpired());
 
+        AnimalFood pisiFood = new SeniorAnimalFood("PisiFood", 200, new Date(2029,11,2), 2, true);
+
+        cat1.increaseMoodLevel(recreationalActivity1, pisiFood);
+        cat1.feedCorrectly(pisiFood);
     }
 }

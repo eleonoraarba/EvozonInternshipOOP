@@ -10,6 +10,22 @@ public abstract class Animal {
     public String favoriteRecreationalActivityName;
     private  int weight;
     private String color;
+    private boolean isAdopted;
+
+    private boolean isHungry;
+
+    public Animal(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName, int weight, String color, boolean isAdopted, boolean isHungry) {
+        this.name = name;
+        this.age = age;
+        this.healthStatus = healthStatus;
+        this.moodLevel = moodLevel;
+        this.favoriteFoodName = favoriteFoodName;
+        this.favoriteRecreationalActivityName = favoriteRecreationalActivityName;
+        this.weight = weight;
+        this.color = color;
+        this.isAdopted = isAdopted;
+        this.isHungry = isHungry;
+    }
 
     public String getName() {
         return name;
@@ -59,13 +75,36 @@ public abstract class Animal {
         this.favoriteRecreationalActivityName = favoriteRecreationalActivityName;
     }
 
-    public Animal(String name, int age, int healthStatus, int moodLevel, String favoriteFoodName, String favoriteRecreationalActivityName) {
-        this.name = name;
-        this.age = age;
-        this.healthStatus = healthStatus;
-        this.moodLevel = moodLevel;
-        this.favoriteFoodName = favoriteFoodName;
-        this.favoriteRecreationalActivityName = favoriteRecreationalActivityName;
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public boolean isHungry() {
+        return isHungry;
+    }
+
+    public void setHungry(boolean hungry) {
+        isHungry = hungry;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean isAdopted() {
+        return isAdopted;
+    }
+
+    public void setAdopted(boolean adopted) {
+        isAdopted = adopted;
     }
 
     public Animal() {
@@ -73,4 +112,18 @@ public abstract class Animal {
 
     public abstract void eat();
     public abstract void speak();
+
+    public void increaseMoodLevel(RecreationalActivity activityDone, AnimalFood foodEatten){
+        if(this.favoriteFoodName.equals(foodEatten.getName()) && this.favoriteRecreationalActivityName.equals(activityDone.getName())){
+
+            System.out.println("Mood level before: " + this.getMoodLevel());
+            this.moodLevel +=2;
+            System.out.println("Mood level after: " + this.getMoodLevel());
+        }
+        else{
+            System.out.println("No increase in the mood with this conditions.");
+        }
+    }
+
+    public abstract void feedCorrectly(AnimalFood animalFood);
 }
