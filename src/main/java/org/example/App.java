@@ -15,11 +15,13 @@ public class App {
         JuniorAnimalFood cutuFood = new JuniorAnimalFood("CutuFood", 40, new Date(2028, 11, 2), 5);
         dog.setFavoriteFoodName("CutuFood");
 
-        girl.feedAnimal(dog);
-        girl.feedAnimal(dog);
-        girl.feedAnimal(dog);
-        girl.feedAnimal(dog);
-        girl.feedAnimal(dog);
+        WetDogFood wetDogFood = new WetDogFood("WetCutuFood", 50, new Date(2028,22,11), 10);
+        SpecialDogFood specialDogFood = new SpecialDogFood("SpecialDogoFood", 90, new Date(2029,11,2), 14);
+
+
+        girl.feedAnimal(dog,wetDogFood);
+        girl.feedAnimal(dog,wetDogFood);
+        System.out.println(dog.getWeight());
 
         girl.playWithAnimal(dog);
         girl.playWithAnimal(dog);
@@ -33,14 +35,14 @@ public class App {
         veteranianAssistent.petAnimal(dog);
 
         girl.wakeUp();
-        girl.feedAnimal(dog);
+        girl.feedAnimal(dog, specialDogFood);
         girl.walkAnimal(dog);
         dog.sleep();
         girl.doHomework();
         dog.wakeUp();
         girl.playWithAnimal(dog);
         girl.walkAnimal(dog);
-        girl.feedAnimal(dog);
+        girl.feedAnimal(dog, specialDogFood);
         dog.sleep();
 
         System.out.println(dog.getWeight());

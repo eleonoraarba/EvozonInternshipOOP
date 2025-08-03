@@ -10,11 +10,6 @@ public class Duck extends Animal{
     }
 
     @Override
-    public void eat() {
-        System.out.println("Duck eats");
-    }
-
-    @Override
     public void speak() {
         System.out.println("mac-mac");
     }
@@ -32,5 +27,10 @@ public class Duck extends Animal{
         else{
             System.out.println("Food is not ok for this duck.");
         }
+    }
+
+    @Override
+    public void eat(AnimalFood animalFood) {
+
     }
 }

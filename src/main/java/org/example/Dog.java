@@ -10,8 +10,26 @@ public class Dog extends Animal{
     }
 
     @Override
-    public void eat() {
-        System.out.println("Dog eats");
+    public void eat(AnimalFood animalFood) {
+        if(animalFood instanceof WetDogFood){
+            int weightAfterEating = this.getWeight() + 3;
+            this.setWeight(weightAfterEating);
+
+            int moodLevelAfterEating = this.getMoodLevel() + 1;
+            this.setMoodLevel(moodLevelAfterEating);
+            System.out.println("Dog ate.");
+        }
+        if( animalFood instanceof SpecialDogFood){
+            int weightAfterEating = this.getWeight() + 1;
+            this.setWeight(weightAfterEating);
+
+            int moodLevelAfterEating = this.getMoodLevel() + 1;
+            this.setMoodLevel(moodLevelAfterEating);
+            System.out.println("Dog ate.");
+        }
+        else{
+            System.out.println("Food is not for doggo!");
+        }
     }
 
     @Override
@@ -37,5 +55,4 @@ public class Dog extends Animal{
             System.out.println("Food is not ok for this dog.");
         }
     }
-
 }

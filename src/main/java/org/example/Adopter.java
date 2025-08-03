@@ -116,5 +116,10 @@ public abstract class Adopter {
 
         int moodLevelAfterWalking = animal.getMoodLevel() + 1;
         animal.setMoodLevel(moodLevelAfterWalking);
+        System.out.println("Walk done.");
+    }
+
+    public void feedAnimal(Animal animal, AnimalFood food) {
+        animal.eat(food);
     }
 }

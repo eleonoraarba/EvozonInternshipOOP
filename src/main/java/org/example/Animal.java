@@ -120,7 +120,6 @@ public abstract class Animal {
     public Animal() {
     }
 
-    public abstract void eat();
     public abstract void speak();
 
     public void increaseMoodLevel(RecreationalActivity activityDone, AnimalFood foodEatten){
@@ -144,4 +143,6 @@ public abstract class Animal {
     public void wakeUp(){
         System.out.println("Morning!");
     }
+
+    public abstract void eat(AnimalFood animalFood);
 }

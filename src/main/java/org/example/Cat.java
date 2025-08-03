@@ -10,11 +10,6 @@ public class Cat extends Animal{
     }
 
     @Override
-    public void eat() {
-        System.out.println("Cat eats");
-    }
-
-    @Override
     public void speak() {
         System.out.println("miu-miu");
     }
@@ -32,6 +27,11 @@ public class Cat extends Animal{
         else{
             System.out.println("Food is not ok for this cat.");
         }
+    }
+
+    @Override
+    public void eat(AnimalFood animalFood) {
+
     }
 
     @Override
